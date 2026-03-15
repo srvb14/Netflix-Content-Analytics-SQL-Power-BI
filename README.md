@@ -1,80 +1,56 @@
-# Netflix-Content-Analytics-SQL-Power-BI
-End-to-end Netflix data analysis using SQL and Power BI to explore content distribution, trends, and insights from the Netflix Movies &amp; TV Shows dataset.
+# Netflix Content Strategy & Quality Audit (1953 - 2022)
 
-## Project Overview
-This project performs an exploratory data analysis of Netflix movies and TV shows using SQL and Power BI.
-The goal is to analyze the distribution of content, identify trends in movie and TV show releases, and generate insights about Netflix's catalog.
-The project demonstrates a typical data analyst workflow, including data querying, transformation, and dashboard visualization.
+## 📊 Project Overview
+This project performs a deep-dive analysis into the Netflix library to identify trends in content quality, audience segmentation, and the historical evolution of the platform. Using **SQL** for data extraction and **Power BI** for strategic storytelling, I identified key "Hidden Gems" and analyzed the performance gap between Movies and TV Shows.
 
-## Tools & Technologies
-  - SQL
-  - Power BI
-  - CSV dataset
+## 🛠️ Tech Stack
+* **Data Source:** IMDb/Netflix Dataset (5,283 Titles)
+* **Database:** MySQL (ETL, Data Cleaning, and Aggregate Analysis)
+* **Visualization:** Power BI (DAX, Interactive Dashboards)
 
-## Dataset
-Dataset used: Netflix Movies and TV Shows Dataset
-It contains information such as:
-  -index
-  -id
-  -title
-  -type
-  -description
-  release_year
-  -age_certification
-  -runtime
-  -imdb_id
-  -imdb_score
-  -imdb_votes
+---
 
-## SQL Analysis Performed
-  -Key SQL operations used in this project include:
-  -Data filtering
-  -Aggregations (COUNT, GROUP BY)
-  -Sorting and ranking
-  -Handling missing values
-  -Text pattern analysis
+## 📈 Dashboard Highlights
 
-## Objectives: The project addresses the following analytical questions:
-  - 1. Content Breakdown
-       Analyze the distribution of Netflix titles by:
-       Content type (Movie vs TV Show), Age certification
-    This helps determine which demographic Netflix is targeting the most.
+### 1. Executive Overview
+Focuses on the rapid growth of the library and high-level quality benchmarks.
+> **Key Insight:** While volume has increased by 300% since 2015, maintaining a consistent "Prestige Rate" remains a challenge.
 
-  - 2. High-Performing Content
-       Identify titles that meet the following criteria:
-       IMDb score greater than 8.0
-       IMDb votes greater than 10,000
-    These represent popular and highly rated titles on the platform.
+![Executive Overview]()
 
-  - 3. Historical Quality Trends:
-       Analyze how content quality has evolved over time by calculating:
-       Average IMDb score per year
-       Comparison between Movies vs TV Shows
-    Goal: Determine whether content quality improved or declined as content volume increased.
 
-  - 4. Runtime Analysis
-       Categorize movies into runtime groups:
-       Short (< 90 minutes), Standard (90–120 minutes), Long (>120 minutes)
-    Then compare their average IMDb ratings to see whether runtime influences audience perception.
+---
 
-  - 5. Identifying Hidden Gems:
-       Identify titles with:
-       IMDb score greater than 8.5
-       Low vote counts
-       These titles may represent high-quality but under-discovered content, often referred to as hidden gems.
+### 2. Format Optimization (Movies vs. Shows)
+Analyzes the efficiency of content formats.
+> **Key Insight:** TV Shows yield a 19% "Hit Rate" compared to 4% for Movies, suggesting higher subscriber retention value in episodic content.
 
-## Power BI Dashboard
-The dashboard visualizes the insights discovered through SQL analysis.
-KPI Cards, Key summary metrics:
-  -Total Titles
-  -Average IMDb Score
-  -Most Common Age Certification
-  -Peak Release Year
-  -Distribution of Movies vs TV Shows
-  -Top 10 Age Certifications by number of titles
-  -Runtime vs IMDb Score
-  -List of Hidden Gems
-  -Includes slicer for Release Year and Type
+![Format Analysis](Add your Page 2 Screenshot link here)
 
-<img width="1341" height="751" alt="image" src="https://github.com/user-attachments/assets/9a802386-89b6-4cb8-be3d-97eb0b2d427c" />
+---
 
+### 3. Audience Strategy & Hidden Gems
+Identifies market gaps and "undiscovered" high-quality content.
+> **Key Insight:** Identified 320+ "Hidden Gems"—titles with IMDb scores > 8.0 but low mainstream discovery—representing a low-cost ROI opportunity.
+
+![Audience Strategy](Add your Page 3 Screenshot link here)
+
+---
+
+### 4. Brand Evolution
+Tracks the shift from licensed classics to high-volume originals.
+> **Key Insight:** Historical data shows a quality-volume trade-off as Netflix transitioned into a global production powerhouse.
+
+![Historical Trends](Add your Page 4 Screenshot link here)
+
+---
+
+## 🧪 SQL Technical Skills Demonstrated
+* **CTEs & Subqueries:** To calculate dynamic segment averages.
+* **Data Cleaning:** Handling nulls in `age_certification` and normalizing categorical data.
+* **Feature Engineering:** Creating custom buckets for decades and audience segments.
+
+## 💡 Final Recommendations
+1. **Reallocate Budget:** Shift mid-tier movie funding toward high-quality limited series.
+2. **Close the Family Gap:** Increase investment in PG-rated content to compete with household-centric competitors.
+3. **Algorithm Optimization:** Promote "Hidden Gems" to improve average library satisfaction without new production costs.
